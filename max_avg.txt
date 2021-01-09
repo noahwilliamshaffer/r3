@@ -1,0 +1,2 @@
+Compute the maximum and average value of a sequence of numbers. 
+The end of sequence is indicated when 0 is encountered.

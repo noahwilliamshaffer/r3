@@ -1,0 +1,14 @@
+word_puzzle_vector.x: word_puzzle_vector.o rotation.o
+	g++ -o $@ word_puzzle_vector.o rotation.o
+
+.SUFFIXES: .x
+
+.PHONY : clean
+
+clean:
+	rm -f *.o *.x core.*
+
+%.x : %.c
+	$(CC) -o $@ $<
+%.x : %.cpp
+	$(CXX) -o $@ $<
